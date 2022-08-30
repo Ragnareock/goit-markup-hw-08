@@ -1,0 +1,26 @@
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  .title {
+    color: $titleTextColor;
+    font-weight: $boldWeight;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .item {
+    width: 270px;
+  }
+}
+.feature__img {
+  width: 270px;
+  height: 120px;
+  background-color: $secondaryBackgroundColor;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}

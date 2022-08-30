@@ -1,0 +1,13 @@
+.logo {
+  color: $accentColor;
+  font-family: $logoFont;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.accent {
+  color: $logoHeaderColor;
+}
+.footer__section .accent {
+  color: $backgroundColor;
+}

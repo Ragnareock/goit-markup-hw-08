@@ -1,0 +1,127 @@
+.footer__section {
+  background-color: $footerBackgroundColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.site__footer {
+  margin-top: 20px;
+  .map__link {
+    color: $backgroundColor;
+    text-decoration: none;
+    font-style: normal;
+    display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+  .link {
+    color: $footerTextColor;
+    text-decoration: none;
+    font-style: normal;
+    display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+  .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.invait__title {
+  font-weight: $boldWeight;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: $mediumLetterSpacing;
+  text-transform: uppercase;
+  color: $backgroundColor;
+  margin-bottom: 20px;
+}
+.invait__list {
+  display: flex;
+  gap: 10px;
+}
+.invait__icon {
+  fill: $backgroundColor;
+}
+.invait__link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+.page__invait {
+  margin-left: 70px;
+}
+.subscribe__form {
+  margin-left: auto;
+}
+.subscribe__label {
+  font-weight: $boldWeight;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: $mediumLetterSpacing;
+  text-transform: uppercase;
+  color: $backgroundColor;
+}
+.footer__subscribe {
+  margin-top: 12px;
+  position: relative;
+}
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: $backgroundColor;
+  background-color: transparent;
+  padding: 16px 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: $mediumLetterSpacing;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: $mediumLetterSpacing;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.subscribe__button {
+  width: 200px;
+  height: 50px;
+  background: $accentColor;
+  border-radius: 4px;
+  color: $backgroundColor;
+  font-weight: $boldWeight;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: left;
+  letter-spacing: $largeLetterSpacing;
+  margin-left: 12px;
+  padding: 10px 28px;
+}
+.subscribe__icon {
+  fill: $backgroundColor;
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
