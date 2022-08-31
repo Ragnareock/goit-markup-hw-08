@@ -1,10 +1,20 @@
 .section__title {
   font-weight: $boldWeight;
-  font-size: 36px;
-  line-height: 1.17;
+  // font-size: 36px;
+  // line-height: 1.17;
   text-align: center;
   letter-spacing: $mediumLetterSpacing;
   color: $titleTextColor;
   margin-top: 0;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
