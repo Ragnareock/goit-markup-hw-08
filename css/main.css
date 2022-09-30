@@ -80,6 +80,12 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .container {
   margin-left: auto;
@@ -304,6 +310,11 @@ button {
 .presentation {
   padding-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .presentation {
+    display: none;
+  }
+}
 
 .presentation__list {
   display: flex;
@@ -314,8 +325,7 @@ button {
   width: 370px;
   position: relative;
 }
-
-.services__title {
+.presentation__list .services__title {
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
@@ -365,8 +375,19 @@ button {
   margin-bottom: 16px;
 }
 .team__list .item {
-  width: 270px;
+  width: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) {
+  .team__list .item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list .item {
+    width: calc((100% - 30px) / 4);
+    width: 270px;
+  }
 }
 
 .soc__list {

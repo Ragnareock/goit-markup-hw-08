@@ -17,13 +17,13 @@
   &:focus {
     border-color: $accentColor;
   }
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 210px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 226px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 170px;
   }
 }
@@ -37,13 +37,13 @@
 }
 .client__item .item {
   width: 100%;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 30px) / 6);
   }
 }
