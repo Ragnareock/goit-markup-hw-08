@@ -1,13 +1,25 @@
 .logo {
-  color: $accentColor;
   font-family: $logoFont;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
+// .accent {
+//   color: $logoHeaderColor;
+// }
+// .footer__section .accent {
+//   color: $backgroundColor;
+// }
 .accent {
-  color: $logoHeaderColor;
+  color: $accentColor;
 }
-.footer__section .accent {
+.logo--light {
   color: $backgroundColor;
+}
+.logo--dark {
+  color: $titleTextColor;
 }

@@ -62,7 +62,7 @@ header {
   text-decoration: none;
 }
 
-.visually__hidden {
+.visually_hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -110,7 +110,7 @@ header {
   }
 }
 
-.section__title {
+.section-title {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
@@ -118,14 +118,14 @@ header {
   margin-top: 0;
 }
 @media screen and (max-width: 1199px) {
-  .section__title {
+  .section-title {
     font-size: 28px;
     line-height: 1.18;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section__title {
+  .section-title {
     font-size: 36px;
     line-height: 1.17;
     margin-bottom: 50px;
@@ -141,7 +141,7 @@ button {
   border-radius: 4px;
 }
 
-.order__button {
+.hero__button {
   color: #ffffff;
   background-color: #2196f3;
   font-weight: 700;
@@ -153,19 +153,28 @@ button {
 }
 
 .logo {
-  color: #2196f3;
   font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .accent {
-  color: #000000;
+  color: #2196f3;
 }
 
-.footer__section .accent {
+.logo--light {
   color: #ffffff;
+}
+
+.logo--dark {
+  color: #212121;
 }
 
 .navigation__list {
@@ -208,12 +217,12 @@ button {
   left: 0;
 }
 
-.contact__list {
+.contact {
   display: flex;
   margin-left: auto;
   gap: 50px;
 }
-.contact__list .link {
+.contact .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -224,7 +233,7 @@ button {
   color: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact__list .link:hover, .contact__list .link:focus {
+.contact .link:hover, .contact .link:focus {
   color: #2196f3;
 }
 
@@ -241,21 +250,27 @@ button {
 .hero__title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .hero {
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  height: 600px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
@@ -263,13 +278,20 @@ button {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
+}
 
-.feature__list {
+.feature {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.feature__list .title {
+.feature .title {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -278,20 +300,20 @@ button {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
-  .feature__list .title {
+  .feature .title {
     text-align: center;
   }
 }
-.feature__list .item {
+.feature .item {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .feature__list .item {
+  .feature .item {
     width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .feature__list .item {
+  .feature .item {
     width: calc((100% - 90px) / 4);
   }
 }
@@ -316,16 +338,16 @@ button {
   }
 }
 
-.presentation__list {
+.presentation {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.presentation__list .item {
+.presentation .item {
   width: 370px;
   position: relative;
 }
-.presentation__list .services__title {
+.presentation .presentation__title {
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
@@ -344,11 +366,7 @@ button {
   height: 70px;
 }
 
-.team {
-  background-color: #f5f4fa;
-}
-
-.team__title {
+.team-card__title {
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -360,12 +378,13 @@ button {
   justify-content: center;
 }
 
-.team__list {
+.team {
+  background-color: #f5f4fa;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.team__list .profession {
+.team .team-card__profession {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -374,29 +393,29 @@ button {
   justify-content: center;
   margin-bottom: 16px;
 }
-.team__list .item {
+.team .item {
   width: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
-  .team__list .item {
+  .team .item {
     width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .team__list .item {
+  .team .item {
     width: calc((100% - 30px) / 4);
     width: 270px;
   }
 }
 
-.soc__list {
+.social {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.soc__link {
+.social__link {
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -406,25 +425,25 @@ button {
   justify-content: center;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc__link:hover, .soc__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: #2196f3;
 }
 
-.soc__icon {
+.social__icon {
   fill: #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc__link:hover .soc__icon, .soc__link:focus .soc__icon {
+.social__link:hover .social__icon, .social__link:focus .social__icon {
   fill: #ffffff;
 }
 
-.card {
+.team-card {
   padding: 30px 10px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
 
-.client__list {
+.client {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -580,7 +599,7 @@ button {
   transform: translateY(0);
 }
 
-.footer__section {
+.footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -591,30 +610,30 @@ button {
   align-items: baseline;
 }
 
-.site__footer {
+.contact-footer {
   margin-top: 20px;
 }
-.site__footer .map__link {
+.contact-footer .contact-footer__link {
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
   display: block;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site__footer .map__link:hover, .site__footer .map__link:focus {
+.contact-footer .contact-footer__link:hover, .contact-footer .contact-footer__link:focus {
   color: #2196f3;
 }
-.site__footer .link {
+.contact-footer .link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
   display: block;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site__footer .link:hover, .site__footer .link:focus {
+.contact-footer .link:hover, .contact-footer .link:focus {
   color: #2196f3;
 }
-.site__footer .item:not(:last-child) {
+.contact-footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -628,16 +647,16 @@ button {
   margin-bottom: 20px;
 }
 
-.invait__list {
+.invait-social {
   display: flex;
   gap: 10px;
 }
 
-.invait__icon {
+.invait-social__icon {
   fill: #ffffff;
 }
 
-.invait__link {
+.invait-social__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -647,15 +666,15 @@ button {
   justify-content: center;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.invait__link:hover, .invait__link:focus {
+.invait-social__link:hover, .invait-social__link:focus {
   background-color: #2196f3;
 }
 
-.page__invait {
+.invait {
   margin-left: 70px;
 }
 
-.subscribe__form {
+.subscribe {
   margin-left: auto;
 }
 
@@ -668,12 +687,12 @@ button {
   color: #ffffff;
 }
 
-.footer__subscribe {
+.footer-subscribe {
   margin-top: 12px;
   position: relative;
 }
 
-.subscribe__input {
+.footer-subscribe__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -685,29 +704,29 @@ button {
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
-.subscribe__input:focus {
+.footer-subscribe__input:focus {
   outline: none;
 }
-.subscribe__input::-moz-placeholder {
+.footer-subscribe__input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe__input:-ms-input-placeholder {
+.footer-subscribe__input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe__input::placeholder {
+.footer-subscribe__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe__button {
+.footer-subscribe__button {
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -722,7 +741,7 @@ button {
   padding: 10px 28px;
 }
 
-.subscribe__icon {
+.footer-subscribe__icon {
   fill: #ffffff;
   position: absolute;
   right: 28px;

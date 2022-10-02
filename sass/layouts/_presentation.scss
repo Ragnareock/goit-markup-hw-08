@@ -4,7 +4,7 @@
     display: none;
   }
 }
-.presentation__list {
+.presentation {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -12,7 +12,7 @@
     width: 370px;
     position: relative;
   }
-  .services__title {
+  .presentation__title {
     color: $backgroundColor;
     background-color: rgba(47, 48, 58, 0.8);
     font-weight: $boldWeight;

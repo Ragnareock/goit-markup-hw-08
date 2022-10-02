@@ -1,4 +1,4 @@
-.footer__section {
+.footer {
   background-color: $footerBackgroundColor;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -7,9 +7,9 @@
   display: flex;
   align-items: baseline;
 }
-.site__footer {
+.contact-footer {
   margin-top: 20px;
-  .map__link {
+  .contact-footer__link {
     color: $backgroundColor;
     text-decoration: none;
     font-style: normal;
@@ -44,14 +44,14 @@
   color: $backgroundColor;
   margin-bottom: 20px;
 }
-.invait__list {
+.invait-social {
   display: flex;
   gap: 10px;
 }
-.invait__icon {
+.invait-social__icon {
   fill: $backgroundColor;
 }
-.invait__link {
+.invait-social__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -65,10 +65,10 @@
     background-color: $accentColor;
   }
 }
-.page__invait {
+.invait {
   margin-left: 70px;
 }
-.subscribe__form {
+.subscribe {
   margin-left: auto;
 }
 .subscribe__label {
@@ -79,11 +79,11 @@
   text-transform: uppercase;
   color: $backgroundColor;
 }
-.footer__subscribe {
+.footer-subscribe {
   margin-top: 12px;
   position: relative;
 }
-.subscribe__input {
+.footer-subscribe__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -104,7 +104,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
-.subscribe__button {
+.footer-subscribe__button {
   width: 200px;
   height: 50px;
   background: $accentColor;
@@ -118,7 +118,7 @@
   margin-left: 12px;
   padding: 10px 28px;
 }
-.subscribe__icon {
+.footer-subscribe__icon {
   fill: $backgroundColor;
   position: absolute;
   right: 28px;
