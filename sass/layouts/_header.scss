@@ -1,6 +1,6 @@
-// .menu-container {
-//   display: none;
-// }
+.menu-container {
+  display: none;
+}
 .navigation__list {
   display: flex;
   margin-left: 93px;
@@ -66,14 +66,14 @@
   fill: currentColor;
   margin-right: 10px;
 }
-// .menu-open {
-//   margin-left: auto;
-//   background-color: transparent;
-//   border: none;
-//   padding: 0px;
-//   margin-top: 10px;
-//   margin-bottom: 10px;
-// }
-// .menu-open-icon {
-//   fill: $titleTextColor;
-// }
+.menu-open {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-open-icon {
+  fill: $titleTextColor;
+}

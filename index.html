@@ -20,45 +20,45 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-        <!-- <div class="menu-container"> -->
-        <nav class="navigation">
-          <ul class="navigation__list list">
-            <li class="navigation__item item">
-              <a href="./index.html" class="navigation__link link navigation__link--current"
-                >Студія</a
+        <div class="menu-container">
+          <nav class="navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__item item">
+                <a href="./index.html" class="navigation__link link navigation__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="navigation__item item">
+                <a href="./portfolio.html" class="navigation__link link">Портфоліо</a>
+              </li>
+              <li class="navigation__item item">
+                <a href="" class="navigation__link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact list">
+            <li class="contact__item item">
+              <a href="mailto:info@devstudio.com" class="contact__link link"
+                ><svg class="contact__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="navigation__item item">
-              <a href="./portfolio.html" class="navigation__link link">Портфоліо</a>
-            </li>
-            <li class="navigation__item item">
-              <a href="" class="navigation__link link">Контакти</a>
+            <li class="contact__item item">
+              <a href="tel:+380961111111" class="contact__link link"
+                ><svg class="contact__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contact list">
-          <li class="contact__item item">
-            <a href="mailto:info@devstudio.com" class="contact__link link"
-              ><svg class="contact__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__item item">
-            <a href="tel:+380961111111" class="contact__link link"
-              ><svg class="contact__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-      <!-- <button class="menu-open" type="button">
+        </div>
+        <button class="menu-open" type="button">
           <svg class="menu-open-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu_open"></use>
           </svg>
-        </button> -->
-      <!-- </div> -->
+        </button>
+      </div>
     </header>
     <!-- Hero -->
     <main>
@@ -115,7 +115,7 @@
         </div>
       </section>
       <!-- Presentation -->
-      <section class="section">
+      <section class="section section--hidden">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="presentation list">
@@ -329,7 +329,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="footer__left">
           <a class="logo logo--light" href="./index.html"
@@ -402,7 +402,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
