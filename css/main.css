@@ -153,6 +153,7 @@ button {
 }
 
 .logo {
+  color: #212121;
   font-family: Raleway, sans-serif;
   font-size: 24px;
   line-height: 1.17;
@@ -165,16 +166,12 @@ button {
   }
 }
 
-.accent {
+.logo__accent {
   color: #2196f3;
 }
 
 .logo--light {
   color: #ffffff;
-}
-
-.logo--dark {
-  color: #212121;
 }
 
 .navigation__list {
@@ -199,14 +196,11 @@ button {
 .navigation__list .link:hover, .navigation__list .link:focus {
   color: #2196f3;
 }
-.navigation__list .link.current {
+.navigation__list .navigation__link--current {
   color: #2196f3;
-}
-
-.current {
   position: relative;
 }
-.current::after {
+.navigation__list .navigation__link--current::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -505,7 +499,7 @@ button {
   }
 }
 
-.secondary__button {
+.filter__button {
   color: #212121;
   background-color: #f5f4fa;
   font-weight: 500;
@@ -515,7 +509,7 @@ button {
   min-width: 73px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.secondary__button:hover, .secondary__button:focus {
+.filter__button:hover, .filter__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   border-color: #2196f3;
@@ -529,7 +523,7 @@ button {
   gap: 8px;
 }
 
-.section__portfolio {
+.product__title {
   color: #212121;
   font-weight: 700;
   font-size: 18px;
@@ -555,7 +549,7 @@ button {
   overflow: hidden;
 }
 
-.top__text {
+.product__description {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -572,30 +566,30 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product__list {
+.product {
   display: flex;
   flex-wrap: wrap;
 }
-.product__list .item:nth-child(3n) {
+.product .item:nth-child(3n) {
   margin-right: 0;
 }
-.product__list .item:nth-last-child(-n+3) {
+.product .item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
-.product__list .item {
+.product .item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
   position: relative;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product__list .item:hover,
-.product__list .item:focus {
+.product .item:hover,
+.product .item:focus {
   cursor: pointer;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.product__list .item:hover .top__text,
-.product__list .item:focus .top__text {
+.product .item:hover .product__description,
+.product .item:focus .product__description {
   transform: translateY(0);
 }
 
@@ -610,30 +604,30 @@ button {
   align-items: baseline;
 }
 
-.contact-footer {
+.footer__list {
   margin-top: 20px;
 }
-.contact-footer .contact-footer__link {
+.footer__list .footer__link {
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
   display: block;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-footer .contact-footer__link:hover, .contact-footer .contact-footer__link:focus {
+.footer__list .footer__link:hover, .footer__list .footer__link:focus {
   color: #2196f3;
 }
-.contact-footer .link {
+.footer__list .link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
   display: block;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-footer .link:hover, .contact-footer .link:focus {
+.footer__list .link:hover, .footer__list .link:focus {
   color: #2196f3;
 }
-.contact-footer .item:not(:last-child) {
+.footer__list .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -782,11 +776,11 @@ button {
   pointer-events: none;
 }
 
-.close__icon {
+.modal__close__icon {
   fill: #000000;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close__icon:hover, .close__icon:focus {
+.modal__close__icon:hover, .modal__close__icon:focus {
   fill: #2196f3;
 }
 
@@ -822,12 +816,12 @@ button {
   margin-bottom: 0;
 }
 
-.input__wrap {
+.modal__input__wrap {
   position: relative;
   display: block;
 }
 
-.modal__input {
+.modal__input__fieled {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -839,12 +833,12 @@ button {
   color: #000000;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__input:focus {
+.modal__input__fieled:focus {
   border-color: #2196f3;
   outline: none;
 }
 
-.input__icon {
+.modal__input__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -852,7 +846,7 @@ button {
   fill: #212121;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__input:focus + .input__icon {
+.modal__input__fieled:focus + .modal__input__icon {
   fill: #2196f3;
 }
 
@@ -864,7 +858,7 @@ button {
   margin-bottom: 4px;
 }
 
-.online__comment {
+.modal__comment {
   width: 100%;
   height: 120px;
   resize: none;
@@ -878,25 +872,25 @@ button {
   color: #000000;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.online__comment::-moz-placeholder {
+.modal__comment::-moz-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.online__comment:-ms-input-placeholder {
+.modal__comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.online__comment::placeholder {
+.modal__comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.online__comment:focus {
+.modal__comment:focus {
   border-color: #2196f3;
   outline: none;
 }
@@ -930,7 +924,7 @@ button {
   display: flex;
   align-items: center;
 }
-.check__text .check__box {
+.check__text .modal__check__box {
   width: 16px;
   height: 15px;
   border: 1.75px solid #212121;
@@ -942,25 +936,25 @@ button {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check__icon {
+.modal__check__icon {
   fill: transparent;
 }
-.modal__check:checked + .check__text .check__icon {
+.modal__check:checked + .check__text .modal__check__icon {
   fill: #ffffff;
 }
 
-.modal__check:checked + .check__text .check__box {
+.modal__check:checked + .check__text .modal__check__box {
   background-color: #2196f3;
   border: none;
   box-shadow: none;
 }
 
-.agree__link {
+.modal__agree {
   color: #2196f3;
   text-decoration: underline;
 }
 
-.modal__fieled.agree {
+.modal__fieled__agree {
   display: flex;
   justify-content: center;
 }/*# sourceMappingURL=main.css.map */

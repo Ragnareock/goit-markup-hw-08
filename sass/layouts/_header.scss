@@ -23,21 +23,19 @@
       color: $accentColor;
     }
   }
-  .link.current {
+  .navigation__link--current {
     color: $accentColor;
-  }
-}
-.current {
-  position: relative;
-  &::after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: $accentColor;
-    border-radius: 2px;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
+    position: relative;
+    &::after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: $accentColor;
+      border-radius: 2px;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+    }
   }
 }
 .contact {

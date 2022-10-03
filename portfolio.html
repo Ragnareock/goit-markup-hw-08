@@ -19,9 +19,7 @@
     <!-- Head -->
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="header__logo logo logo--dark"
-          ><span class="accent">Web</span>Studio</a
-        >
+        <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
         <!-- <div class="menu-container"> -->
         <nav class="navigation">
           <ul class="navigation__list list">
@@ -29,7 +27,9 @@
               <a href="./index.html" class="navigation__link link">Студія</a>
             </li>
             <li class="navigation__item item">
-              <a href="./portfolio.html" class="navigation__link link current">Портфоліо</a>
+              <a href="./portfolio.html" class="navigation__link link navigation__link--current"
+                >Портфоліо</a
+              >
             </li>
             <li class="navigation__item item">
               <a href="" class="navigation__link link">Контакти</a>
@@ -63,26 +63,26 @@
     <!-- Hero -->
     <main>
       <section class="section container">
-        <h1 class="visually__hidden">Портфоліо</h1>
+        <h1 class="visually_hidden">Портфоліо</h1>
         <ul class="filter list">
-          <li class="item">
-            <button type="button" class="secondary__button button">Усі</button>
+          <li class="filter__item item">
+            <button type="button" class="filter__button button">Усі</button>
           </li>
-          <li class="item">
-            <button type="button" class="secondary__button button">Веб-сайти</button>
+          <li class="filter__item item">
+            <button type="button" class="filter__button button">Веб-сайти</button>
           </li>
-          <li class="item">
-            <button type="button" class="secondary__button button">Додатки</button>
+          <li class="filter__item item">
+            <button type="button" class="filter__button button">Додатки</button>
           </li>
-          <li class="item">
-            <button type="button" class="secondary__button button">Дизайн</button>
+          <li class="filter__item item">
+            <button type="button" class="filter__button button">Дизайн</button>
           </li>
-          <li class="item">
-            <button type="button" class="secondary__button button">Маркетинг</button>
+          <li class="filter__item item">
+            <button type="button" class="filter__button button">Маркетинг</button>
           </li>
         </ul>
-        <ul class="product__list list">
-          <li class="item">
+        <ul class="product list">
+          <li class="product__item item">
             <div class="product__wrap">
               <img
                 src="./images/technocrack.jpg"
@@ -91,69 +91,69 @@
                 height="294"
                 class="jpg"
               />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Технокряк</h2>
+              <h2 class="product__title">Технокряк</h2>
               <p class="product__type">Веб-сайт</p>
             </div>
           </li>
-          <li class="item">
+          <li class="product__item item">
             <div class="product__wrap">
               <img src="./images/poster.jpg" alt="Баскетбол" width="370" height="294" class="jpg" />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Постер New Orlean vs Golden Star</h2>
+              <h2 class="product__title">Постер New Orlean vs Golden Star</h2>
               <p class="product__type">Дизайн</p>
             </div>
           </li>
-          <li class="item">
+          <li class="product__item item">
             <div class="product__wrap">
               <img src="./images/seafood.jpg" alt="Логотип" width="370" height="294" class="jpg" />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Ресторан Seafood</h2>
+              <h2 class="product__title">Ресторан Seafood</h2>
               <p class="product__type">Додаток</p>
             </div>
           </li>
-          <li class="item">
+          <li class="product__item item">
             <div class="product__wrap">
               <img src="./images/prime.jpg" alt="Навушники" width="370" height="294" class="jpg" />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Проєкт Prime</h2>
+              <h2 class="product__title">Проєкт Prime</h2>
               <p class="product__type">Маркетинг</p>
             </div>
           </li>
-          <li class="item">
+          <li class="product__item item">
             <div class="product__wrap">
               <img src="./images/boxes.jpg" alt="Коробки" width="370" height="294" class="jpg" />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Проєкт Boxes</h2>
+              <h2 class="product__title">Проєкт Boxes</h2>
               <p class="product__type">Додаток</p>
             </div>
           </li>
-          <li class="item">
+          <li class="product__item item">
             <div class="product__wrap">
               <img
                 src="./images/inspiration.jpg"
@@ -162,52 +162,52 @@
                 height="294"
                 class="jpg"
               />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Inspiration has no Borders</h2>
+              <h2 class="product__title">Inspiration has no Borders</h2>
               <p class="product__type">Веб-сайт</p>
             </div>
           </li>
-          <li class="item">
+          <li class="product__item item">
             <div class="product__wrap">
               <img src="./images/edition.jpg" alt="Журнал" width="370" height="294" class="jpg" />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Видання Limited Edition</h2>
+              <h2 class="product__title">Видання Limited Edition</h2>
               <p class="product__type">Дизайн</p>
             </div>
           </li>
-          <li class="item">
+          <li class="product__item item">
             <div class="product__wrap">
               <img src="./images/lab.jpg" alt="Бирка" width="370" height="294" class="jpg" />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Проєкт LAB</h2>
+              <h2 class="product__title">Проєкт LAB</h2>
               <p class="product__type">Маркетинг</p>
             </div>
           </li>
-          <li class="item">
+          <li class="product__item item">
             <div class="product__wrap">
               <img src="./images/business.jpg" alt="Додаток" width="370" height="294" class="jpg" />
-              <p class="top__text">
+              <p class="product__description">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
               </p>
             </div>
             <div class="product__border">
-              <h2 class="section__portfolio">Growing Business</h2>
+              <h2 class="product__title">Growing Business</h2>
               <p class="product__type">Додаток</p>
             </div>
           </li>
@@ -215,70 +215,74 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer__section">
+    <footer class="footer">
       <div class="container footer__container">
-        <div class="page-footer">
-          <a href="./index.html" class="logo">Web<span class="accent">Studio</span></a>
+        <div class="footer__left">
+          <a class="logo logo--light" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
           <address>
-            <ul class="site__footer list">
-              <li class="item">
+            <ul class="footer__list list">
+              <li class="footer__item item">
                 <a
                   href="https://goo.gl/maps/UnmmoopjUjEERXCH8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="map__link"
+                  class="footer__link"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="item">
-                <a href="mailto:info@example.com" class="link">info@example.com</a>
+              <li class="footer__item item">
+                <a href="mailto:info@example.com" class="footer__link link">info@example.com</a>
               </li>
-              <li class="item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+              <li class="footer__item item">
+                <a href="tel:+380991111111" class="footer__link link">+38 099 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
-        <div class="page__invait">
+        <div class="invait">
           <h2 class="invait__title">приєднуйтесь</h2>
-          <ul class="invait__list list">
-            <li class="invait-soc-item">
-              <a href="" class="invait__link link"
-                ><svg class="invait__icon" width="20" height="20">
+          <ul class="invait-social list">
+            <li class="invait-social__item">
+              <a href="" class="invait-social__link link"
+                ><svg class="invait-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
-            <li class="invait-soc-item">
-              <a href="" class="invait__link link"
-                ><svg class="invait__icon" width="20" height="20">
+            <li class="invait-social__item">
+              <a href="" class="invait-social__link link"
+                ><svg class="invait-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li class="invait-soc-item">
-              <a href="" class="invait__link link"
-                ><svg class="invait__icon" width="20" height="20">
+            <li class="invait-social__item">
+              <a href="" class="invait-social__link link"
+                ><svg class="invait-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="invait-soc-item">
-              <a href="" class="invait__link link"
-                ><svg class="invait__icon" width="20" height="20">
+            <li class="invait-social__item">
+              <a href="" class="invait-social__link link"
+                ><svg class="invait-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
-        <form class="subscribe__form">
+        <form class="subscribe">
           <label for="user-email" class="subscribe__label">Підпишіться на розсилку</label>
-          <div class="footer__subscribe">
+          <div class="footer-subscribe">
             <input
               type="email"
-              class="subscribe__input"
+              class="footer-subscribe__input"
               name="user-email"
               id="subscribe-email"
               placeholder="E-mail"
               required
             />
-            <button class="subscribe__button" type="submit">Підписатися</button>
-            <svg class="subscribe__icon" width="24" height="24">
+            <button class="footer-subscribe__button" type="submit">Підписатися</button>
+            <svg class="footer-subscribe__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </div>

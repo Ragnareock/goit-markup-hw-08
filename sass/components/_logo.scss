@@ -1,4 +1,5 @@
 .logo {
+  color: $titleTextColor;
   font-family: $logoFont;
   font-size: 24px;
   line-height: 1.17;
@@ -8,18 +9,9 @@
     line-height: 1.19;
   }
 }
-// .accent {
-//   color: $logoHeaderColor;
-// }
-// .footer__section .accent {
-//   color: $backgroundColor;
-// }
-.accent {
+.logo__accent {
   color: $accentColor;
 }
 .logo--light {
   color: $backgroundColor;
-}
-.logo--dark {
-  color: $titleTextColor;
 }
