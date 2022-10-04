@@ -77,3 +77,68 @@
 .menu-open-icon {
   fill: $titleTextColor;
 }
+.mob-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $backgroundColor;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 0px 48px 25px;
+}
+.menu-close {
+  margin-left: auto;
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  &:hover,
+  &:focus {
+    fill: red;
+  }
+}
+.menu-close-icon {
+  fill: $titleTextColor;
+  &:hover,
+  &:focus {
+    fill: red;
+  }
+}
+.mob-menu-list {
+  margin-bottom: 302px;
+}
+.mob-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $titleTextColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-connect-link__mail {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+.mob-connect-link__tel {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}

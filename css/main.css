@@ -258,6 +258,74 @@ button {
   fill: #212121;
 }
 
+.mob-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px 0px 48px 25px;
+}
+
+.menu-close {
+  margin-left: auto;
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+.menu-close:hover, .menu-close:focus {
+  fill: red;
+}
+
+.menu-close-icon {
+  fill: #212121;
+}
+.menu-close-icon:hover, .menu-close-icon:focus {
+  fill: red;
+}
+
+.mob-menu-list {
+  margin-bottom: 302px;
+}
+
+.mob-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mob-menu-link:hover, .mob-menu-link:focus {
+  color: #2196f3;
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-connect-link__mail {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+.mob-connect-link__mail:hover, .mob-connect-link__mail:focus {
+  color: #2196f3;
+}
+
+.mob-connect-link__tel {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+}
+.mob-connect-link__tel:hover, .mob-connect-link__tel:focus {
+  color: #2196f3;
+}
+
 .hero__title {
   color: #ffffff;
   font-weight: 900;
