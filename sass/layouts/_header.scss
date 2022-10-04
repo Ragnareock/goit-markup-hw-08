@@ -109,7 +109,7 @@
   }
 }
 .mob-menu-link {
-  font-weight: 500;
+  font-weight: $mediumWeight;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: $preSmallLetterSpacing;
@@ -124,7 +124,7 @@
   margin-bottom: 32px;
 }
 .mob-connect-link__mail {
-  font-weight: 500;
+  font-weight: $mediumWeight;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: $preSmallLetterSpacing;
@@ -136,7 +136,7 @@
   }
 }
 .mob-connect-link__tel {
-  font-weight: 500;
+  font-weight: $mediumWeight;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: $preSmallLetterSpacing;
@@ -154,7 +154,7 @@
   margin-bottom: 64px;
 }
 .mob-soc-link {
-  font-weight: 500;
+  font-weight: $mediumWeight;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: $preSmallLetterSpacing;
@@ -162,20 +162,15 @@
 }
 .mob-soc-list {
   display: flex;
-}
-.mob-soc-item {
-  margin-right: 20px;
   position: relative;
+  gap: 20px;
 }
-.mob-soc-item:not(:first-child) + .mob-soc-item::before {
+.mob-soc-item:not(:last-child)::after {
   content: '';
   position: absolute;
-  width: 22px;
-  height: 1px;
-  background-color: $titleTextColor;
-  transform: rotate(90deg);
-  // left: 0;
-  // top: 0;
-  // bottom: 10px;
-  //  right: 30px;
+  margin-left: 10px;
+  width: 0;
+  height: 22px;
+  border: 1px solid;
+  color: rgba(33, 33, 33, 0.2);
 }
