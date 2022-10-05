@@ -187,11 +187,25 @@ button {
 .menu-container {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: contents;
+  }
+}
 
 .navigation__list {
   display: flex;
-  margin-left: 93px;
-  gap: 46px;
+  gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__list {
+    margin-left: 92px;
+  }
 }
 .navigation__list .link {
   color: #212121;
@@ -228,7 +242,6 @@ button {
 .contact {
   display: flex;
   margin-left: auto;
-  gap: 50px;
 }
 .contact .link {
   font-weight: 500;
@@ -244,10 +257,30 @@ button {
 .contact .link:hover, .contact .link:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .contact {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    gap: 30px;
+    width: 100%;
+    justify-content: end;
+  }
+}
 
 .header__container {
   display: flex;
   align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
 }
 
 .contact__icon {
@@ -266,6 +299,11 @@ button {
 }
 .menu-open:hover, .menu-open:focus {
   fill: #2196f3;
+}
+@media screen and (min-width: 767px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .mob-menu {

@@ -1,10 +1,18 @@
 .menu-container {
   display: none;
+  @include tablet {
+    display: contents;
+  }
 }
 .navigation__list {
   display: flex;
-  margin-left: 93px;
-  gap: 46px;
+  gap: 50px;
+  @include tablet {
+    margin-left: 88px;
+  }
+  @include desktop {
+    margin-left: 92px;
+  }
   .link {
     color: $titleTextColor;
     font-weight: $mediumWeight;
@@ -41,7 +49,6 @@
 .contact {
   display: flex;
   margin-left: auto;
-  gap: 50px;
   .link {
     font-weight: $mediumWeight;
     font-size: 14px;
@@ -57,10 +64,24 @@
       color: $accentColor;
     }
   }
+  @include tablet {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 160px;
+  }
+  @include desktop {
+    gap: 30px;
+    width: 100%;
+    justify-content: end;
+  }
 }
 .header__container {
   display: flex;
   align-items: center;
+  height: 60px;
+  @include tablet {
+    height: 80px;
+  }
 }
 .contact__icon {
   fill: currentColor;
@@ -77,6 +98,9 @@
   &:hover,
   &:focus {
     fill: $accentColor;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
   }
 }
 .mob-menu {
