@@ -1,3 +1,6 @@
+.section-secondary-bg-color {
+  background-color: $secondaryBackgroundColor;
+}
 .team-card__title {
   color: $titleTextColor;
   font-weight: $mediumWeight;
@@ -10,7 +13,6 @@
   justify-content: center;
 }
 .team {
-  background-color: $secondaryBackgroundColor;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

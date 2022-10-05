@@ -111,7 +111,7 @@
   }
 }
 .footer-subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -129,6 +129,9 @@
     line-height: 1.25;
     letter-spacing: $mediumLetterSpacing;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @include desktop {
+    width: 358px;
   }
 }
 .footer-subscribe__button {
