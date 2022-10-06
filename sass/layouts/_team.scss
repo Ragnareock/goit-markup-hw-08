@@ -1,22 +1,11 @@
-.section-secondary-bg-color {
+.section_color {
   background-color: $secondaryBackgroundColor;
 }
-.team-card__title {
-  color: $titleTextColor;
-  font-weight: $mediumWeight;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  background-color: $backgroundColor;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-}
-.team {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  .team-card__profession {
+  .card__text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -37,10 +26,21 @@
     }
   }
 }
-.team-card {
+.card {
   padding: 30px 10px;
   background-color: $backgroundColor;
   border-radius: 0px 0px 4px 4px;
+  &__title {
+    color: $titleTextColor;
+    font-weight: $mediumWeight;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    background-color: $backgroundColor;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
   .social {
     display: flex;
     justify-content: center;
