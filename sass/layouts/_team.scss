@@ -37,10 +37,15 @@
     }
   }
 }
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+.team-card {
+  padding: 30px 10px;
+  background-color: $backgroundColor;
+  border-radius: 0px 0px 4px 4px;
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 .social__link {
   width: 44px;
@@ -63,9 +68,4 @@
   .social__link:focus & {
     fill: $backgroundColor;
   }
-}
-.team-card {
-  padding: 30px 10px;
-  background-color: $backgroundColor;
-  border-radius: 0px 0px 4px 4px;
 }

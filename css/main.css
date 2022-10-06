@@ -564,7 +564,12 @@ button {
   }
 }
 
-.social {
+.team-card {
+  padding: 30px 10px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-card .social {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -590,12 +595,6 @@ button {
 }
 .social__link:hover .social__icon, .social__link:focus .social__icon {
   fill: #ffffff;
-}
-
-.team-card {
-  padding: 30px 10px;
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
 }
 
 .client {
@@ -699,7 +698,7 @@ button {
   }
 }
 
-.product__title {
+.definition__title {
   color: #212121;
   font-weight: 700;
   font-size: 18px;
@@ -708,12 +707,12 @@ button {
   margin-bottom: 4px;
 }
 
-.product__type {
+.definition__type {
   font-size: 16px;
   line-height: 1.87;
 }
 
-.product__border {
+.definition {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -870,7 +869,7 @@ button {
   }
 }
 
-.social__icon {
+.social__icon_white {
   fill: #ffffff;
 }
 
