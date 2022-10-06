@@ -24,12 +24,10 @@
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="./index.html" class="navigation__link">Студія</a>
+                <a href="./index.html" class="navigation__link navigation__link_current">Студія</a>
               </li>
               <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link navigation__link_current"
-                  >Портфоліо</a
-                >
+                <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
               </li>
               <li class="navigation__item">
                 <a href="" class="navigation__link">Контакти</a>
@@ -70,10 +68,12 @@
             <nav class="mob-menu-nav">
               <ul class="mob-menu-list">
                 <li class="mob-menu-item">
-                  <a href="./index.html" class="mob-menu-link mob-menu-link--current">Студія</a>
+                  <a href="./index.html" class="mob-menu-link">Студія</a>
                 </li>
                 <li class="mob-menu-item">
-                  <a href="./portfolio.html" class="mob-menu-link">Портфоліо</a>
+                  <a href="./portfolio.html" class="mob-menu-link mob-menu-link--current"
+                    >Портфоліо</a
+                  >
                 </li>
                 <li class="mob-menu-item">
                   <a href="" class="mob-menu-link">Контакти</a>
@@ -346,23 +346,23 @@
               ><span class="logo__accent">Web</span>Studio</a
             >
             <address>
-              <ul class="footer__list">
-                <li class="footer__item">
+              <ul class="connect">
+                <li class="connect__item">
                   <a
                     href="https://goo.gl/maps/UnmmoopjUjEERXCH8"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="footer__link"
+                    class="connect__link"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="footer__item">
-                  <a href="mailto:info@example.com" class="footer__link footer__link_grey"
+                <li class="connect__item">
+                  <a href="mailto:info@example.com" class="connect__link connect__link_grey"
                     >info@example.com</a
                   >
                 </li>
-                <li class="footer__item">
-                  <a href="tel:+380991111111" class="footer__link footer__link_grey"
+                <li class="connect__item">
+                  <a href="tel:+380991111111" class="connect__link connect__link_grey"
                     >+38 099 111 11 11</a
                   >
                 </li>
@@ -371,28 +371,28 @@
           </div>
           <div class="invait">
             <h2 class="invait__title">приєднуйтесь</h2>
-            <ul class="invait-social">
-              <li class="invait-social__item">
-                <a href="" class="invait-social__link"
-                  ><svg class="invait-social__icon" width="20" height="20">
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link"
+                  ><svg class="social__icon social__icon_white" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use></svg
                 ></a>
               </li>
-              <li class="invait-social__item">
-                <a href="" class="invait-social__link"
-                  ><svg class="invait-social__icon" width="20" height="20">
+              <li class="social__item">
+                <a href="" class="social__link"
+                  ><svg class="social__icon social__icon_white" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use></svg
                 ></a>
               </li>
-              <li class="invait-social__item">
-                <a href="" class="invait-social__link"
-                  ><svg class="invait-social__icon" width="20" height="20">
+              <li class="social__item">
+                <a href="" class="social__link"
+                  ><svg class="social__icon social__icon_white" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use></svg
                 ></a>
               </li>
-              <li class="invait-social__item">
-                <a href="" class="invait-social__link"
-                  ><svg class="invait-social__icon" width="20" height="20">
+              <li class="social__item">
+                <a href="" class="social__link"
+                  ><svg class="social__icon social__icon_white" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use></svg
                 ></a>
               </li>
@@ -401,18 +401,18 @@
         </div>
         <form class="subscribe">
           <label for="user-email" class="subscribe__label">Підпишіться на розсилку</label>
-          <div class="footer-subscribe">
+          <div class="connection">
             <input
               type="email"
-              class="footer-subscribe__input"
+              class="connection__input"
               name="user-email"
               id="subscribe-email"
               placeholder="E-mail"
               required
             />
-            <button class="footer-subscribe__button" type="submit">
+            <button class="connection__button" type="submit">
               Підписатися
-              <svg class="footer-subscribe__icon" width="24" height="24">
+              <svg class="connection__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
