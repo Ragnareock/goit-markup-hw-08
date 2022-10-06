@@ -111,7 +111,7 @@ header {
   }
 }
 
-.section-title {
+.section_title {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
@@ -119,14 +119,14 @@ header {
   margin-top: 0;
 }
 @media screen and (max-width: 1199px) {
-  .section-title {
+  .section_title {
     font-size: 28px;
     line-height: 1.18;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-title {
+  .section_title {
     font-size: 36px;
     line-height: 1.17;
     margin-bottom: 50px;
@@ -476,25 +476,25 @@ button {
   margin-bottom: 30px;
 }
 
-.section--hidden {
+.section-hidden {
   padding-top: 0;
 }
 @media screen and (max-width: 1199px) {
-  .section--hidden {
+  .section-hidden {
     display: none;
   }
 }
 
-.presentation {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.presentation .presentation__item {
+.gallery__item {
   width: 370px;
   position: relative;
 }
-.presentation .presentation__title {
+.gallery__title {
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
