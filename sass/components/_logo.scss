@@ -8,10 +8,10 @@
     font-size: 26px;
     line-height: 1.19;
   }
-}
-.logo__accent {
-  color: $accentColor;
-}
-.logo_light {
-  color: $backgroundColor;
+  &__accent {
+    color: $accentColor;
+  }
+  &_light {
+    color: $backgroundColor;
+  }
 }

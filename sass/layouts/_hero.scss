@@ -1,17 +1,3 @@
-.hero__title {
-  color: $backgroundColor;
-  font-weight: $blackWeight;
-  font-size: 26px;
-  line-height: 1.62;
-  letter-spacing: $largeLetterSpacing;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
-  @include desktop {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-}
 .hero {
   background-color: $footerBackgroundColor;
   text-align: center;
@@ -30,5 +16,19 @@
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
+  }
+  &__title {
+    color: $backgroundColor;
+    font-weight: $blackWeight;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: $largeLetterSpacing;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    @include desktop {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
