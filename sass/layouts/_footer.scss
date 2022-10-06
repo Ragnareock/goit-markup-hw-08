@@ -24,7 +24,7 @@
       color: $accentColor;
     }
   }
-  .link {
+  .footer__link_grey {
     color: $footerTextColor;
     text-decoration: none;
     font-style: normal;
@@ -35,11 +35,11 @@
       color: $accentColor;
     }
   }
-  .item:not(:last-child) {
+  .footer__item:not(:last-child) {
     margin-bottom: 8px;
   }
   @include desktop {
-    .item:not(:last-child) {
+    .footer__item:not(:last-child) {
       margin-bottom: 9px;
     }
   }
@@ -63,7 +63,7 @@
   color: $backgroundColor;
   margin-bottom: 20px;
 }
-.invait-social {
+.social {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -75,10 +75,10 @@
     margin-bottom: 0px;
   }
 }
-.invait-social__icon {
+.social__icon {
   fill: $backgroundColor;
 }
-.invait-social__link {
+.social__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -103,14 +103,14 @@
   text-transform: uppercase;
   color: $backgroundColor;
 }
-.footer-subscribe {
+.connection {
   margin-top: 20px;
   position: relative;
   @include desktop {
     margin-top: 20px;
   }
 }
-.footer-subscribe__input {
+.connection__input {
   min-width: 300px;
   width: 100%;
   height: 50px;
@@ -138,7 +138,7 @@
     width: 358px;
   }
 }
-.footer-subscribe__button {
+.connection__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,7 +160,7 @@
     margin-top: 0;
   }
 }
-.footer-subscribe__icon {
+.connection__icon {
   fill: $backgroundColor;
   margin-left: auto;
 }
