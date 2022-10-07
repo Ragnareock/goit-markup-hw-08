@@ -185,20 +185,46 @@
           <h2 class="presentation__title section_title">Чим ми займаємося</h2>
           <ul class="gallery">
             <li class="gallery__item">
-              <img
-                src="./images/computer.jpg"
-                alt="Персональний комп'ютер"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/computer.webp 1x, ./images/computer@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="./images/computer.jpg 1x, ./images/computer@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img
+                  src="./images/computer.jpg"
+                  alt="Персональний комп'ютер"
+                  width="370"
+                  height="294"
+              /></picture>
               <p class="gallery__title">Десктопні додатки</p>
             </li>
             <li class="gallery__item">
-              <img src="./images/phone.jpg" alt="Мобільний пристрій" width="370" height="294" />
+              <picture
+                ><source
+                  srcset="./images/phone.webp 1x, ./images/phone@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/phone.jpg" alt="Мобільний пристрій" width="370" height="294"
+              /></picture>
               <p class="gallery__title">Мобільні додатки</p>
             </li>
             <li class="gallery__item">
-              <img src="./images/tablet.jpg" alt="Планшет" width="370" height="294" />
+              <picture
+                ><source
+                  srcset="./images/tablet.webp 1x, ./images/tablet@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="./images/tablet.jpg 1x, ./images/tablet@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/tablet.jpg" alt="Планшет" width="370" height="294"
+              /></picture>
               <p class="gallery__title">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -210,7 +236,30 @@
           <h2 class="team__title section_title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/designer.jpg" alt="Співробітник" width="270" />
+              <picture
+                ><source
+                  srcset="./images/designer-desk.webp 1x, ./images/designer-desk@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="./images/designer-desk.jpg 1x, ./images/designer-desk@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/designer-tab.webp 1x, ./images/designer-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp" />
+                <source
+                  srcset="./images/designer-tab.jpg 1x, ./images/designer-tab@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/designer-mob.webp 1x, ./images/designer-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp" />
+                <source
+                  srcset="./images/designer-mob.jpg 1x, ./images/designer-mob@2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img src="./images/designer-mob.jpg" alt="Співробітник" width="450"
+              /></picture>
               <div class="card">
                 <h3 class="card__title">Ігор Дем'яненко</h3>
                 <p class="card__text">Product Designer</p>
