@@ -5,6 +5,8 @@
   gap: 30px;
 }
 .client__link {
+  width: 100%;
+  // width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -17,15 +19,12 @@
   &:focus {
     border-color: $accentColor;
   }
-  @include mobile {
-    width: 210px;
-  }
-  @include tablet {
-    width: 226px;
-  }
-  @include desktop {
-    width: 170px;
-  }
+  // @include tablet {
+  //   width: 226px;
+  // }
+  // @include desktop {
+  //   width: 170px;
+  // }
 }
 .client__icon {
   fill: #afb1b8;
@@ -33,5 +32,14 @@
   .client__link:hover &,
   .client__link:focus & {
     fill: $accentColor;
+  }
+}
+.client__item {
+  width: calc((100% - 30px) / 2);
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 150px) / 6);
   }
 }
