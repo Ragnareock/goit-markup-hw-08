@@ -6,7 +6,6 @@
 }
 .client__link {
   width: 100%;
-  // width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -19,12 +18,6 @@
   &:focus {
     border-color: $accentColor;
   }
-  // @include tablet {
-  //   width: 226px;
-  // }
-  // @include desktop {
-  //   width: 170px;
-  // }
 }
 .client__icon {
   fill: #afb1b8;

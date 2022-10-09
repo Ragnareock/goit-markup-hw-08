@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   background-color: $backgroundColor;
   width: 100vw;
   height: 100vh;
@@ -37,8 +38,11 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: $accentColor;
+    color: none;
   }
+}
+.mob-menu-link--current {
+  color: $accentColor;
 }
 .mob-menu-item:not(:last-child) {
   margin-bottom: 32px;
@@ -52,7 +56,7 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: $accentColor;
+    color: none;
   }
 }
 .mob-connect-link-tel {
@@ -61,9 +65,10 @@
   line-height: 1.18;
   letter-spacing: $preSmallLetterSpacing;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $accentColor;
   &:hover,
   &:focus {
-    color: $accentColor;
+    color: none;
   }
   margin-bottom: 32px;
 }
@@ -79,6 +84,10 @@
   line-height: 1.22;
   letter-spacing: $preSmallLetterSpacing;
   color: $accentColor;
+  &:hover,
+  &:focus {
+    color: none;
+  }
 }
 .mob-soc-list {
   display: flex;
